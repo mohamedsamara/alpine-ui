@@ -1,0 +1,20 @@
+{
+  "name": "alpine-ui",
+  "version": "1.0.0",
+  "description": "Alpine UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedsamara/alpine-ui.git"
+  },
+  "keywords": [],
+  "author": "Mohamed Samara (https://github.com/mohamedsamara)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohamedsamara/alpine-ui/issues"
+  },
+  "homepage": "https://github.com/mohamedsamara/alpine-ui#readme"
+}
