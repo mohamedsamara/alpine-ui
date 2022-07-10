@@ -4,12 +4,10 @@ import "./style.css";
 
 window.Alpine = Alpine;
 
-Alpine.store;
-Alpine.store("darkMode", {
-  on: false,
-
+Alpine.store("theme", {
+  dark: true,
   toggle() {
-    this.on = !this.on;
+    this.dark = !this.dark;
   },
 } as any);
 

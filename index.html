@@ -8,13 +8,38 @@
     <title>Alpine UI</title>
   </head>
   <body>
-    <div x-data :class="$store.darkMode && 'bg-black'">
-      <h1>Hello Alpine!</h1>
-      <button x-data @click="$store.darkMode = ! $store.darkMode">
-        Toggle Dark Mode
-      </button>
-    </div>
+    <div
+      x-data
+      class="flex flex-col justify-center items-center h-screen duration-300"
+      :class="$store.theme.dark && 'bg-[#1A365D]'"
+    >
+      <div class="sm:container mx-4 md:mx-auto">
+        <div class="form-check form-switch flex flex-row justify-end mb-6">
+          <input
+            type="checkbox"
+            id="switch-theme"
+            x-model="$store.theme.dark"
+            class="form-check-input appearance-none w-9 -ml-10 rounded-full float-left h-5 align-top bg-no-repeat bg-contain bg-gray-300 focus:outline-none cursor-pointer shadow-sm duration-300 bg-[url('/assets/circle.svg')]"
+            @x-on:change="$store.theme.toggle()"
+          />
+          <label
+            for="switch-theme"
+            class="form-check-label mx-2 text-center duration-300"
+            :class="$store.theme.dark ? 'text-white':'text-black'"
+            >Toggle Theme</label
+          >
+        </div>
 
+        <div class="flex justify-center">
+          <h1
+            class="text-2xl font-semibold duration-300"
+            :class="$store.theme.dark ? 'text-white':'text-black'"
+          >
+            Hello Alpine!
+          </h1>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
