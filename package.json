@@ -12,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/mohamedsamara/alpine-ui.git"
   },
-  "keywords": [],
+  "keywords": [
+    "alpine",
+    "tailwindcss",
+    "vite"
+  ],
   "author": "Mohamed Samara (https://github.com/mohamedsamara)",
   "license": "MIT",
   "bugs": {
